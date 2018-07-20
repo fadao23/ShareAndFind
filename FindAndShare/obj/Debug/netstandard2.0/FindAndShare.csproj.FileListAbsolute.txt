@@ -1,0 +1,13 @@
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/FindAndShare.deps.json
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/FindAndShare.dll
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/FindAndShare.pdb
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/Mono.Android.dll
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/Xamarin.iOS.dll
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/Xamarin.iOS.pdb
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/bin/Debug/netstandard2.0/Mono.Android.pdb
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.csproj.CoreCompileInputs.cache
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.AssemblyInfoInputs.cache
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.AssemblyInfo.cs
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.dll
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.pdb
+/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/obj/Debug/netstandard2.0/FindAndShare.csprojResolveAssemblyReference.cache

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FindAndShare" 
+             x:Class="FindAndShare.MainPage"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}">
+    
+     <Grid Padding="60">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <forms:AnimationView
+            x:Name="animationView" 
+            Grid.Row="0"
+            AutoPlay="True" 
+            Loop="true"
+            Animation="servishero_loading.json" />
+
+        <StackLayout
+            Grid.Row="1"
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand">
+            
+        <Label Text="Welcome to ShareD" FontSize="30" TextColor="Black" HorizontalOptions="Center"/>
+        </StackLayout>
+
+   
+        <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button Text="Login" 
+                        BackgroundColor="White" 
+                        TextColor="#f4c907" 
+                        BorderColor="#f4c907" 
+                        BorderWidth="2"
+                        Command="{Binding LoginPage}"/>
+            </StackLayout>
+             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button Text="Register" BackgroundColor="#f4c907" TextColor="White" />
+            </StackLayout>
+         </StackLayout>
+    </Grid>
+    
+</ContentPage>

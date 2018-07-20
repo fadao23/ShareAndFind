@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FindAndShare.Views.LoginPage"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
+    <ContentPage.Content>
+
+        <StackLayout Grid.Row="1" Orientation="Vertical"  Padding="20, 30, 20, 0">
+            <Entry Placeholder="Username" Text="{Binding Username}"/>
+            <Entry Placeholder="Password" IsPassword="true" Text="{Binding Password}"/>
+           <Button Text="Login" BackgroundColor="#f4c907" TextColor="White" Command="{Binding Log}"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
