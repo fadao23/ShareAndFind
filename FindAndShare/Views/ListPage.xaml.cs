@@ -15,11 +15,5 @@ namespace FindAndShare.Views
             NavigationPage.SetHasBackButton(this, false);
 
         }
-
-        void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
-        {
-            ListView.SelectedItem = null;
-        }
-
     }
 }

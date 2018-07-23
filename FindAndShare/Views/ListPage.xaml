@@ -19,7 +19,6 @@
                   SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                   RowHeight="320" 
                   ItemsSource="{Binding ListAnnonces}" 
-                  ItemSelected="Handle_ItemSelected"
                   HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>

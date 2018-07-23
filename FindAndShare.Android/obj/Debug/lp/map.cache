@@ -27,3 +27,7 @@ Xamarin.Forms.Xaml
 Lottie.Android
 Lottie.Forms
 netstandard
+ImageCircle.Forms.Plugin
+Newtonsoft.Json
+System.Net.Http.Extensions
+System.Net.Http.Primitives

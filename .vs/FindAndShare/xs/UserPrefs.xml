@@ -1,27 +1,29 @@
 ﻿<Properties StartupConfiguration="{1CE042D9-5AB0-4A93-A85A-CA881A9257A6}|Default">
   <MonoDevelop.Ide.ItemProperties.FindAndShare.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.ItemProperties.FindAndShare.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.16EAC71E-3EB1-4CD8-BFA0-0E34021D640E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FindAndShare/ViewModel/AnnoncePageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FindAndShare/ViewModel/ListPageViewModel.cs">
     <Files>
       <File FileName="FindAndShare/ViewModel/RegisterPageViewModel.cs" Line="34" Column="1" />
       <File FileName="FindAndShare/Views/RegisterPage.xaml.cs" Line="17" Column="1" />
       <File FileName="FindAndShare/ViewModel/MainPageViewModel.cs" Line="13" Column="37" />
       <File FileName="FindAndShare/ViewModel/AddPageViewModel.cs" Line="51" Column="16" />
-      <File FileName="FindAndShare/ViewModel/AnnoncePageViewModel.cs" Line="18" Column="1" />
+      <File FileName="FindAndShare/ViewModel/AnnoncePageViewModel.cs" Line="15" Column="1" />
+      <File FileName="FindAndShare/Views/ListPage.xaml.cs" Line="17" Column="10" />
+      <File FileName="FindAndShare.iOS/Main.cs" Line="12" Column="13" />
       <File FileName="FindAndShare/Models/UserPostModel.cs" Line="13" Column="28" NotebookId="1" />
-      <File FileName="FindAndShare/Views/RegisterPage.xaml" Line="15" Column="90" NotebookId="1" />
-      <File FileName="FindAndShare/Views/MainPage.xaml" Line="45" Column="55" NotebookId="1" />
-      <File FileName="FindAndShare/Views/AnnoncePage.xaml" Line="18" Column="1" NotebookId="1" />
-      <File FileName="FindAndShare/Views/ListPage.xaml" Line="18" Column="40" NotebookId="1" />
+      <File FileName="FindAndShare/Views/RegisterPage.xaml" Line="21" Column="1" NotebookId="1" />
+      <File FileName="FindAndShare/Views/MainPage.xaml" Line="50" Column="15" NotebookId="1" />
+      <File FileName="FindAndShare/Views/AnnoncePage.xaml" Line="29" Column="52" NotebookId="1" />
+      <File FileName="FindAndShare/Views/ListPage.xaml" Line="19" Column="31" NotebookId="1" />
       <File FileName="FindAndShare/Models/AnnonceModel.cs" Line="8" Column="34" NotebookId="1" />
-      <File FileName="FindAndShare.iOS/Main.cs" Line="17" Column="1" NotebookId="1" />
+      <File FileName="FindAndShare/ViewModel/ListPageViewModel.cs" Line="33" Column="17" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/ViewModel/RegisterPageViewModel.cs" relfile="FindAndShare/ViewModel/RegisterPageViewModel.cs" line="34" column="1" />
-      <Breakpoint file="/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/Views/ListPage.xaml.cs" relfile="FindAndShare/Views/ListPage.xaml.cs" line="21" column="1" />
+      <Breakpoint file="/Users/fernando.borja/Documents/3ie/Xamarin/FindAndShare/FindAndShare/ViewModel/AnnoncePageViewModel.cs" relfile="FindAndShare/ViewModel/AnnoncePageViewModel.cs" line="15" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
