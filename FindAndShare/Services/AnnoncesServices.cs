@@ -45,7 +45,6 @@ namespace FindAndShare.Services
                 var content = JsonConvert.SerializeObject(annonceModel);
                 var JsontoPost = new StringContent(content, Encoding.UTF8, "application/json");
                 var response = await _client.PostAsync(this._postUrl, JsontoPost);
-                var test = response;
                 if (response.IsSuccessStatusCode)
                     return 200;
                 else

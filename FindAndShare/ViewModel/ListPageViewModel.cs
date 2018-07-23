@@ -14,17 +14,38 @@ namespace FindAndShare.ViewModel
     {
         public ObservableCollection<AnnonceModel> ListAnnonces { get; set; }
         public ICommand AddAnnonce { get; }
-        private INavigation _navigation { get; set; }
+        public ICommand OnClick { get; }
         public ObservableCollection<AnnonceModel> _listAnonces;
-        private AnnoncesServices _webServices;
 
-        public ListPageViewModel(INavigation navigation)
+        AnnonceModel _selectedItem;
+        public AnnonceModel SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+
+            set
+            {
+                _selectedItem = value;
+                OnPropertyChanged("SelectedItem");
+                GoToAnnonce();
+
+            }
+        }
+
+        private INavigation _navigation { get; set; }
+        private AnnoncesServices _webServices;
+        private UserModel _user;
+
+        public ListPageViewModel(INavigation navigation, UserModel user)
         {
             Title = "Annonces";
             this._navigation = navigation;
             this.ListAnnonces = new ObservableCollection<AnnonceModel>();
             this._webServices = new AnnoncesServices();
             this.AddAnnonce = new Command(async () => await GoToAddPage());
+            this._user = user;
             this.getall();
             MessagingCenter.Subscribe<AddPageViewModel>(this, "PopPage", (sender) => {
                 this.ListAnnonces.Clear();
@@ -41,7 +62,12 @@ namespace FindAndShare.ViewModel
 
         public async Task GoToAddPage()
         {
-            await this._navigation.PushAsync(new AddPage());
+            await this._navigation.PushAsync(new AddPage(this._user));
+        }
+
+        public async void GoToAnnonce()
+        {
+            await this._navigation.PushAsync(new AnnoncePage(SelectedItem));
         }
     }
 }

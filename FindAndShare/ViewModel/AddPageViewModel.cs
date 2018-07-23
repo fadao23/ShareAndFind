@@ -21,9 +21,10 @@ namespace FindAndShare.ViewModel
         private AnnoncePostModel _annonceModel { get; set; }
         private Page _page;
         private AnnoncesServices _annoncesServices;
+        private UserModel _user;
         private static Random random = new Random();
 
-        public AddPageViewModel(Page page, INavigation navigation)
+        public AddPageViewModel(Page page, INavigation navigation, UserModel user)
         {
             Title = "Add Annonce";
             this.OnAdd = new Command(async () => await OnAddRequest());
@@ -31,19 +32,20 @@ namespace FindAndShare.ViewModel
             this._annonceModel = new AnnoncePostModel();
             this.navigation = navigation;
             this._page = page;
+            this._user = user;
         }
 
         public async Task OnAddRequest()
         {
             this._annonceModel.Fill(this.title, this.Text, this.Image);
             this._annonceModel.Date = DateTime.Now.ToString();
-            this._annonceModel.UserId = "fada2";
+            this._annonceModel.UserId = this._user.ID.S;
             this._annonceModel.ID = RandomString(32);
             var response = await this._annoncesServices.Post(this._annonceModel);
             if (response.Equals(200))
             {
                 await this.navigation.PopAsync();
-                MessagingCenter.Send<AddPageViewModel>(this, "Hi");
+                MessagingCenter.Send<AddPageViewModel>(this, "PopPage");
             }
             else
                 await this._page.DisplayAlert("Error in post.", "Please try again.", "Ok");

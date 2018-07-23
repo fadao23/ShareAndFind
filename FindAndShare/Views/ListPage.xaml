@@ -15,9 +15,12 @@
                 VerticalTextAlignment="Center"
                 BackgroundColor="Transparent"
                 HorizontalOptions="CenterAndExpand" />
-            <ListView x:Name="listView" SelectedItem="{Binding SelcetedItem,Mode=TwoWay}" 
-                  RowHeight="150" 
-                ItemsSource="{Binding ListAnnonces}" HasUnevenRows="True"  >
+            <ListView x:Name="ListView"
+                  SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                  RowHeight="320" 
+                  ItemsSource="{Binding ListAnnonces}" 
+                  ItemSelected="Handle_ItemSelected"
+                  HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -37,58 +40,31 @@
                                 <OnPlatform x:TypeArguments="Thickness"
                                       Android="5" iOS="5"/>
                             </Frame.Padding>
+                                
                             <StackLayout Orientation="Horizontal">
-
-                                <Grid VerticalOptions="CenterAndExpand"
-                                Padding="0"
-                                HorizontalOptions="FillAndExpand"
-                                BackgroundColor="Transparent">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="*"/>
-                                    </Grid.RowDefinitions>
-
-                                    <StackLayout Orientation="Horizontal" VerticalOptions="Start" >
-                                        <controls:CircleImage Source="{Binding Image.S}" VerticalOptions="Start" HeightRequest="30" WidthRequest="30"></controls:CircleImage>
-                                        <Label FontAttributes="None"
-                                   Grid.Row="0"
-                                   HorizontalTextAlignment="Start"
-                                   VerticalTextAlignment="Center"
-                                   FontSize="12"
-                                   Text="{Binding Title.S , Mode = TwoWay}" TextColor="Gray" >
-                                        </Label>
-                                    </StackLayout>
-                                    <Grid Grid.Row="1">
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label FontAttributes="None"
-                                   Grid.Row="1"
-                                   HorizontalTextAlignment="Start"
-                                   VerticalTextAlignment="Start"
-                                   FontSize="12"
-                                   Text="{Binding Text.S, Mode = TwoWay}" TextColor="Black">
-
-                                            </Label>
-                                            <Image Source="{Binding  Image.S}"  Grid.Row="2"  WidthRequest="40" HeightRequest="40" HorizontalOptions="End" />
-                                        </StackLayout>
-                                    </Grid>
-                                 
-                                    <Grid Grid.Row="2"
-                                  BackgroundColor="Transparent"
-                                  Padding="4">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition />
-                                        </Grid.ColumnDefinitions>
-                                        <Label Grid.Row="0"
-                                     Grid.Column="0"
-                                     />
-                                        <Label Grid.Row="0"
-                                     Grid.Column="0"
-                                     Text="{Binding Text.S}" HorizontalOptions="Start" VerticalOptions="Start"/>
-                                    </Grid>
-                                </Grid>
+                                <Grid InputTransparent="True">
+                                  <Grid.RowDefinitions>
+                                      <RowDefinition Height="200"></RowDefinition>
+                                      <RowDefinition Height="50"></RowDefinition>
+                                      <RowDefinition Height="50"></RowDefinition>
+                                  </Grid.RowDefinitions>
+                                  <Grid.ColumnDefinitions>
+                                      <ColumnDefinition Width="*"></ColumnDefinition>
+                                      <ColumnDefinition Width="*"></ColumnDefinition>
+                                      <ColumnDefinition Width="*"></ColumnDefinition>
+                                  </Grid.ColumnDefinitions>
+                                  <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Image.S}" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+                 
+                                  <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                                      <Label Text="{Binding Title.S}" FontSize="20" VerticalOptions="Center"></Label>
+                                  </StackLayout>
+                                   <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                                      <Label Text="{Binding UserId.S}" FontSize="20" VerticalOptions="Center"></Label>
+                                  </StackLayout>
+                                  <StackLayout Grid.Row="2" Grid.Column="2" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                                      <Label Text="{Binding Date.S}" FontSize="20" VerticalOptions="Center"></Label>
+                                  </StackLayout>
+                              </Grid>
                             </StackLayout>
                         </Frame>
                         </ViewCell>

@@ -65,7 +65,7 @@ namespace FindAndShare.ViewModel
             {
                 if (this._password.Equals(this.User.Password.S))
                 {
-                    await this._navigation.PushAsync(new ListPage());
+                    await this._navigation.PushAsync(new ListPage(this.User));
                 }
             }
         }

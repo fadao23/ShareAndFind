@@ -39,7 +39,10 @@
                         Command="{Binding LoginPage}"/>
             </StackLayout>
              <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                <Button Text="Register" BackgroundColor="#f4c907" TextColor="White" />
+                <Button Text="Register" 
+                        BackgroundColor="#f4c907" 
+                        TextColor="White" 
+                        Command="{Binding RegisterPage}" />
             </StackLayout>
          </StackLayout>
     </Grid>

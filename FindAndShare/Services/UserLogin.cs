@@ -3,12 +3,15 @@ using System.Net.Http;
 using FindAndShare.Models;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
+using System.Text;
+using System;
 
 namespace FindAndShare.Services
 {
     public class UserLogin
     {
         private string URL = "https://bfg0r8yoij.execute-api.eu-west-1.amazonaws.com/User-TestPhase/single/";
+        private string _postUrl = "https://bfg0r8yoij.execute-api.eu-west-1.amazonaws.com/User-TestPhase/users";
         private HttpClient _client = new HttpClient();
         public List<UserModel> Items;
 
@@ -28,6 +31,25 @@ namespace FindAndShare.Services
                     return null;
             }
             return null;
+        }
+
+        public async Task<int> OnRegister(UserPostModel user)
+        {
+            try
+            {
+                var content = JsonConvert.SerializeObject(user);
+                var JsontoPost = new StringContent(content, Encoding.UTF8, "application/json");
+                var response = await _client.PostAsync(this._postUrl, JsontoPost);
+                if (response.IsSuccessStatusCode)
+                    return 200;
+                else
+                    return 0;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 0;
+            }
         }
     }
 }

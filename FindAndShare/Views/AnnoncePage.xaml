@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FindAndShare.Views.AnnoncePage"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <Grid Margin="5, 5, 5, 0">
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="auto"></RowDefinition>
+                      <RowDefinition Height="*"></RowDefinition>
+                      <RowDefinition Height="*"></RowDefinition>
+                  </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"></ColumnDefinition>
+                      <ColumnDefinition Width="*"></ColumnDefinition>
+                  </Grid.ColumnDefinitions>
+                  <Image Grid.Row="0"
+                         Grid.Column="0" Grid.ColumnSpan="2"
+                         Source="{Binding Annonce.Image.S}" 
+                         Aspect="AspectFill" 
+                         VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="Center"></Image>
+
+                  <StackLayout Grid.Row="1" 
+                               Grid.Column="0" 
+                               Grid.ColumnSpan="2"
+                               Orientation="Horizontal" >
+                      <Label Text="{Binding Annonce.Text.S}" FontSize="20" ></Label>
+                  </StackLayout>
+                  <StackLayout Grid.Row="2" 
+                               Grid.Column="0" 
+                               Grid.ColumnSpan="2"
+                               Orientation="Horizontal" 
+                               HorizontalOptions="Center">
+                    <Label Grid.Column="0"
+                           TextColor="Aqua"
+                           Text="{Binding Annonce.UserId.S}"/>
+                    <Label Grid.Column="1"
+                           TextColor="Aqua"
+                           Text="{Binding Annonce.Date.S}"/>
+                  </StackLayout>
+              </Grid>
+    </ContentPage.Content>
+</ContentPage>

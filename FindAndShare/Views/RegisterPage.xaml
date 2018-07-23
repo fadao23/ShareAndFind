@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FindAndShare.Views.RegisterPage">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"  Padding="20, 30, 20, 0">
+            <Label Text="Username"/>
+            <Entry Placeholder="Username" Text="{Binding UserPostModel.ID}"/>
+            <Label Text="City"/>
+            <Entry Placeholder="City" Text="{Binding UserPostModel.City}"/>
+            <Label Text="Email"/>
+            <Entry Placeholder="Email" Keyboard="Email" Text="{Binding UserPostModel.Email}"/>
+            <Label Text="Password"/>
+            <Entry Placeholder="Password" IsPassword="true" Text="{Binding UserPostModel.Password}"/>
+           <Button Text="Register" BackgroundColor="#f4c907" TextColor="White" Command="{Binding Register}" Margin="0, 5, 0, 0"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
