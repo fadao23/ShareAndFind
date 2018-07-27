@@ -10,7 +10,7 @@ namespace FindAndShare.Views
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = new LoginPageViewModel(Navigation);
+            BindingContext = new LoginPageViewModel(this, Navigation);
         }
     }
 }

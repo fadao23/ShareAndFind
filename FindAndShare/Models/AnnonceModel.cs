@@ -9,6 +9,5 @@ namespace FindAndShare.Models
         public StringModel Text { get; set; }
         public StringModel ID { get; set; }
         public StringModel Image { get; set; }
-
     }
 }

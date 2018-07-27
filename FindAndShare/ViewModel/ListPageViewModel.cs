@@ -15,7 +15,7 @@ namespace FindAndShare.ViewModel
         public ObservableCollection<AnnonceModel> ListAnnonces { get; set; }
         public ICommand AddAnnonce { get; }
         public ICommand OnClick { get; }
-        public ObservableCollection<AnnonceModel> _listAnonces;
+        private ObservableCollection<AnnonceModel> _listAnonces;
 
         AnnonceModel _selectedItem;
         public AnnonceModel SelectedItem
@@ -28,8 +28,8 @@ namespace FindAndShare.ViewModel
             set
             {
                 _selectedItem = value;
-                OnPropertyChanged("SelectedItem");
-                GoToAnnonce();
+                OnPropertyChanged(nameof(SelectedItem));
+                GoToAnnonce().GetAwaiter();
 
             }
         }
@@ -65,7 +65,7 @@ namespace FindAndShare.ViewModel
             await this._navigation.PushAsync(new AddPage(this._user));
         }
 
-        public async void GoToAnnonce()
+        public async Task GoToAnnonce()
         {
             await this._navigation.PushAsync(new AnnoncePage(SelectedItem));
         }

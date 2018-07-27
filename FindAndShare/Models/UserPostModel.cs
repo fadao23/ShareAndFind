@@ -1,9 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using Foundation;
-using Xamarin.Forms;
-
-namespace FindAndShare.Models
+﻿namespace FindAndShare.Models
 {
     public class UserPostModel
     {

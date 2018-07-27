@@ -32,7 +32,7 @@ namespace FindAndShare.ViewModel
         {
 
             var result = await this._userServices.OnRegister(this.UserPostModel);
-            if (result.Equals(200))
+            if (result)
             {
                 await this._page.DisplayAlert("You registered successfully", "Please Login for use the app", "Ok");
                 await this._navigation.PopToRootAsync();

@@ -106,10 +106,8 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "FindAndShare.Android.dll" comes first in this list. */
-		"FindAndShare.Android.dll",
 		"FindAndShare.dll",
 		"FormsViewGroup.dll",
-		"ImageCircle.Forms.Plugin.dll",
 		"Lottie.Android.dll",
 		"Lottie.Forms.dll",
 		"Newtonsoft.Json.dll",

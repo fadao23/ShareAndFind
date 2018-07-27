@@ -11,6 +11,7 @@ namespace FindAndShare.ViewModel
         
         public ICommand LoginPage { get; }
         public ICommand RegisterPage { get; }
+
         private INavigation _navigation { get; set; }
 
         public MainPageViewModel(INavigation navigation)

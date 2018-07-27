@@ -25,7 +25,8 @@
             Orientation="Horizontal"
             HorizontalOptions="FillAndExpand">
             
-        <Label Text="Welcome to ShareD" FontSize="30" TextColor="Black" HorizontalOptions="Center"/>
+            <Label Text="Welcome to FindAndShare" FontSize="22" TextColor="Black" HorizontalOptions="Center"/>
+         
         </StackLayout>
 
    

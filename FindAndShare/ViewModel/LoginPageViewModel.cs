@@ -12,9 +12,11 @@ namespace FindAndShare.ViewModel
     public class LoginPageViewModel : BaseViewModel
     {
         public ICommand Log { get; set; }
+
         private INavigation _navigation { get; set; }
         private UserLogin userLogin;
         private UserModel User;
+        private Page _page;
 
         public string Username
         {
@@ -27,7 +29,7 @@ namespace FindAndShare.ViewModel
                 if (value != _username)
                 {
                     _username = value;
-                    SetProperty(ref _username, value); 
+                    OnPropertyChanged(nameof(Username));
                 }
             }
         }
@@ -42,19 +44,21 @@ namespace FindAndShare.ViewModel
                 if (value != _password)
                 {
                     _password = value;
-                    SetProperty(ref _password, value);
+                    OnPropertyChanged(nameof(Password));
                 }
             }
         }
         private string _username;
         private string _password;
 
-        public LoginPageViewModel(INavigation navigation)
+        public LoginPageViewModel(Page page, INavigation navigation)
         {
             Title = "Login";
             this.userLogin = new UserLogin();
             this._navigation = navigation;
+            this._page = page;
             Log = new Command(async () => await StartLog());
+
 
         }
 
@@ -66,6 +70,10 @@ namespace FindAndShare.ViewModel
                 if (this._password.Equals(this.User.Password.S))
                 {
                     await this._navigation.PushAsync(new ListPage(this.User));
+                }
+                else
+                {
+                    await this._page.DisplayAlert("Error", "Password or Login is false", "Ok");
                 }
             }
         }

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="FindAndShare.Views.LoginPage"
-             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}">
     <ContentPage.Content>
 
         <StackLayout Grid.Row="1" Orientation="Vertical"  Padding="20, 30, 20, 0">

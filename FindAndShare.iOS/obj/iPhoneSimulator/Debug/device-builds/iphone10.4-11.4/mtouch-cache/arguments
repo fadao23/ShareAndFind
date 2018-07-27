@@ -163,7 +163,6 @@
 	-r=/Users/fernando.borja/.nuget/packages/microsoft.net.http/2.2.29/lib/Xamarin.iOS10/System.Net.Http.Extensions.dll \
 	-r=/Users/fernando.borja/.nuget/packages/microsoft.net.http/2.2.29/lib/Xamarin.iOS10/System.Net.Http.Primitives.dll \
 	-r=/Users/fernando.borja/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll \
-	-r=/Users/fernando.borja/.nuget/packages/xam.plugins.forms.imagecircle/3.0.0.5/lib/xamarinios10/ImageCircle.Forms.Plugin.dll \
 	-r=/Users/fernando.borja/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r=/Users/fernando.borja/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r=/Users/fernando.borja/.nuget/packages/xamarin.forms/3.0.0.482510/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \

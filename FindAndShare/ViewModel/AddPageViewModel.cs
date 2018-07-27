@@ -42,7 +42,7 @@ namespace FindAndShare.ViewModel
             this._annonceModel.UserId = this._user.ID.S;
             this._annonceModel.ID = RandomString(32);
             var response = await this._annoncesServices.Post(this._annonceModel);
-            if (response.Equals(200))
+            if (response)
             {
                 await this.navigation.PopAsync();
                 MessagingCenter.Send<AddPageViewModel>(this, "PopPage");

@@ -1,5 +1,10 @@
 FindAndShare
 FormsViewGroup
+Lottie.Android
+Lottie.Forms
+Newtonsoft.Json
+System.Net.Http.Extensions
+System.Net.Http.Primitives
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -24,10 +29,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-Lottie.Android
-Lottie.Forms
-netstandard
-ImageCircle.Forms.Plugin
-Newtonsoft.Json
-System.Net.Http.Extensions
-System.Net.Http.Primitives

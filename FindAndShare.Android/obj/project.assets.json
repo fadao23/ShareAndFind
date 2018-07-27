@@ -80,21 +80,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "3.0.0.446417"
-        },
-        "frameworkAssemblies": [
-          "Java.Interop"
-        ],
-        "compile": {
-          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
-        }
-      },
       "Xamarin.Android.Arch.Core.Common/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -441,7 +426,6 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "2.5.4",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "11.0.2",
-          "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.0.0.482510"
         },
         "compile": {
@@ -698,26 +682,6 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
-      ]
-    },
-    "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
-      "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
-      "type": "package",
-      "path": "xam.plugins.forms.imagecircle/3.0.0.5",
-      "files": [
-        "lib/monoandroid71/ImageCircle.Forms.Plugin.dll",
-        "lib/monoandroid71/ImageCircle.Forms.Plugin.xml",
-        "lib/netstandard1.0/ImageCircle.Forms.Plugin.dll",
-        "lib/netstandard1.0/ImageCircle.Forms.Plugin.xml",
-        "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll",
-        "lib/netstandard2.0/ImageCircle.Forms.Plugin.xml",
-        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.dll",
-        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.pri",
-        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.xml",
-        "lib/xamarinios10/ImageCircle.Forms.Plugin.dll",
-        "lib/xamarinios10/ImageCircle.Forms.Plugin.xml",
-        "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
-        "xam.plugins.forms.imagecircle.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0": {
